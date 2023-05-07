@@ -1,0 +1,155 @@
+body {
+    background-color: olive;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.start {
+    width: 200px;
+    height:100px;
+    font-size: 50px;
+    color: bisque;
+    background-color: black;
+}
+
+#quizz-window,
+.result-box {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: oldlace;
+    border-radius: 5%;
+    width: 600px;
+    height: 400px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+#quizz-window header {
+    height: 70px;
+    padding: 20px;
+    background:oldlace;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow:  0px 2px 5px 1px black;
+}
+#quizz-window header .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#quizz-window header .timer{
+    background: olive;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    font-size: 15px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+
+.que-text {
+    background: olive;
+    font-size: larger;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.answer-list .answers {
+    padding: 10px;
+    border: 1px solid olive;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+.answer-list .answers:hover {
+    background: rgb(208, 208, 140);
+    transition: all 0.3s ease;
+}
+
+.quizz-window footer {
+    height: 40px;
+    width: 500px;
+    padding: 0 30px;
+   align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.quizz-window footer .total-questions span{
+    width: 100%;
+    align-items: center;
+    user-select: none;
+    display: flex;
+    padding: 5px;
+}
+.quizz-window footer .total-questions span p {
+font-weight: 400;
+padding: 0 5px;
+}
+
+.quizz-window footer .next-button:hover{
+    background: darkslategrey;
+    transition: 0.3s ease;
+}
+
+/*check how this can be handled better*/
+.result-box{
+    display: none;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#quizz-window.hide {
+    display: none;
+}
+
+
+/* .restart-button .restart{
+height: 40px;
+width: 60px;
+display: flex;
+justify-content: center;
+padding: 10px;
+background-color: rgb(198, 198, 132);
+border-radius: 5px;
+cursor: pointer;
+}
+.restart-button .quit{
+height: 40px;
+width: 60px;
+display: flex;
+justify-content: center;
+padding: 10px;
+background-color: brown;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.restart-button {
+    display: flex;
+    position: absolute;
+}
+.restart-button .restart:hover {
+background: darkslategrey;
+    transition: 0.3s ease;
+}
+.restart-button .quit:hover{
+    background: darkslategrey;
+    transition: 0.3s ease;
+} */
+
