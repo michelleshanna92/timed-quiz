@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timed Quizz</title>
+    <link rel="stylesheet" href="./assets/css/stylesheet.css">
+
+</head>
+<body>
+<button class="start">Start</button>
+
+<div id="quizz-window" class="hide">
+    <header>
+        <div class="title">Timed Quizlet</div>
+        <div class="timer">
+        <div class="time-text">Time left</div>
+        <div class="timer-sec"></div>
+</div>
+    </header>
+    <section>
+    <div class="que-text">
+        <p class="question-description"></p>
+    </div>
+    <div class="answer-list">
+        <div class="answers">
+            <span id="answer-0"></span>
+    </div>
+    <div class="answers">
+        <span id="answer-1"></span>
+</div>
+<div class="answers">
+    <span id="answer-2"></span>
+</div>
+<div class="answers">
+    <span id="answer-3"></span>
+</div>
+    </div>
+    </section>
+    <footer>
+<!-- <button class="next-button">Next</button> -->
+
+    </footer>
+    </div>
+    <div class="result-box">
+        <div class="finished">Congratulations, you finished the Quiz!</div> 
+        <div class="result-text">
+            <span> Sorry - you have only completed <p>2<p>out<p>of<p>5<p>questions correctly 🤯</p></span>
+    </div>
+    <div class="restart-button">
+        <button class="restart">Restart</button>
+        <button class="quit">Quit</button>
+    </div>
+
+    <script src="./assets/js/java.js"></script> 
+</body>
+</html>
